@@ -4,7 +4,7 @@ function About() {
   return (
     <React.Fragment>
       <h1>About</h1>
-      <p>Forge</p>
+      <p>Forge</p> 
     </React.Fragment>
   )
 }
