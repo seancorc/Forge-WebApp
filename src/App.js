@@ -14,10 +14,10 @@ class App extends Component {
     todos: []
   }
 
-  //componentDidMount() {
-  //  axios.get('https://jsonplaceholder.typicode.com/todos?_limit=10')
-  //    .then(res => this.setState({ todos: res.data }))
-  //}
+  componentDidMount() {
+    axios.get('https://jsonplaceholder.typicode.com/todos?_limit=10')
+      .then(res => this.setState({ todos: res.data }))
+  }
 
   // Toggle Complete
   markComplete = (id) => {
@@ -39,9 +39,9 @@ class App extends Component {
   addTodo = (title) => {
     axios.post('https://jsonplaceholder.typicode.com/todos', {
       title,
-      completed: false
-    })
-      .then(res => this.setState({ todos: [...this.state.todos, res.data] }));
+      completed: false,
+    }) //Add a .catch
+      .then(res => this.setState({ todos: [...this.state.todos, res.data] }))
   }
 
   render() {
