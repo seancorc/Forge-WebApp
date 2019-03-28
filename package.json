@@ -1,7 +1,8 @@
 {
-  "name": "react-crash-todos",
+  "name": "react_crash_todo",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://forgefitness.app/testing/user-6io3p/",
   "dependencies": {
     "axios": "^0.18.0",
     "react": "^16.7.0",
